@@ -3,9 +3,10 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Captcha: typeof import('./src/components/Captcha.vue')['default']
+    Header: typeof import('./src/components/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     ElButton: typeof import('element-plus/es/el-button')['default']
-    ElRow: typeof import('element-plus/es/el-row')['default']
   }
 }
 
